@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Project</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            padding: 10px;
+            height: 440px;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(6, 231, 235);
+        }
+        .cards {
+            margin-top:0px;
+            border: solid black 3px;
+            border-radius: 10px;
+            height: 380px;
+            padding: 10px;
+            align-items: center;
+            justify-content: center;
+            background-image: url("./bgc.png");
+        }
+        h2, p, h3 {
+            color: black;
+            text-align: center;
+        }
+        img {
+            height: 180px;
+            width: 180px;
+            border-radius: 8px;
+            margin: 0 auto;
+            display: block;
+            border: solid 2px black;
+        }
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            justify-content: center;
+        }
+        button {
+            padding: 5px;
+            border-radius: 4px;
+            background-color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff4500;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cards">
+            <img src="./bat.png" alt="Cricket Bat">
+            <h2><u>Cricket Bat</u></h2>
+            <p>High-quality willow cricket bat for professional players.</p>
+            <h3>Price: $50</h3>
+            <div class="buttons">
+                <button type="submit">Buy Now</button>
+                <button type="submit">Add to Cart</button>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="./shoes.png" alt="Running Shoes">
+            <h2><u>Running Shoes</u></h2>
+            <p>Lightweight and comfortable running shoes for all terrains.</p>
+            <h3>Price: $80</h3>
+            <div class="buttons">
+                <button type="submit">Buy Now</button>
+                <button type="submit">Add to Cart</button>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="./tracksuit.png" alt="Tracksuit">
+            <h2><u>Tracksuit</u></h2>
+            <p>Durable and stylish tracksuit perfect for workouts.</p>
+            <h3>Price: $60</h3>
+            <div class="buttons">
+                <button type="submit">Buy Now</button>
+                <button type="submit">Add to Cart</button>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="./ball.png" alt="Soccer Ball">
+            <h2><u>Cricket Ball</u></h2>
+            <p>Premium quality Cricket ball for professional games.</p>
+            <h3>Price: $40</h3>
+            <div class="buttons">
+                <button type="submit">Buy Now</button>
+                <button type="submit">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
