@@ -30,6 +30,8 @@
             background-image: url("./bgc.png");
             background-repeat: no-repeat;
             background-size: cover;
+            display: flex;
+            flex-direction: column;
         }
         h2, p, h3 {
             color: black;
@@ -44,13 +46,13 @@
             border: solid 2px black;
         }
         .buttons {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
+            display: flex;
             justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
         }
         button {
-            padding: 5px;
+            padding: 5px 10px;
             border-radius: 4px;
             background-color: #fff;
             border: none;
@@ -87,21 +89,24 @@
                 height: auto;
             }
             .cards {
-                height: 360px;
+                height: auto;
+                padding: 15px;
             }
             .imgs {
                 height: 140px;
                 width: 140px;
             }
             .buttons {
-                grid-template-columns: 1fr;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
             }
         }
 
         @media (max-width: 480px) {
             .cards {
-                padding: 5px;
-                height: 320px;
+                padding: 10px;
+                height: auto;
             }
             .imgs {
                 height: 120px;
@@ -109,6 +114,8 @@
             }
             button {
                 font-size: 14px;
+                width: 100%;
+                padding: 8px;
             }
         }
     </style>
