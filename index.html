@@ -20,7 +20,7 @@
             background-color: rgb(6, 231, 235);
         }
         .cards {
-            margin-top:0px;
+            margin-top: 0;
             border: solid black 3px;
             border-radius: 10px;
             height: 420px;
@@ -60,53 +60,99 @@
             background-color: #0044ff;
             color: white;
         }
-        .btn{
-            height : 15px;
-            width : 15px;
+        .btn {
+            height: 15px;
+            width: 15px;
             margin-right: 5px;
+        }
+
+        @media (max-width: 1024px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+                height: auto;
+            }
+            .cards {
+                height: 380px;
+            }
+            .imgs {
+                height: 150px;
+                width: 150px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                height: auto;
+            }
+            .cards {
+                height: 360px;
+            }
+            .imgs {
+                height: 140px;
+                width: 140px;
+            }
+            .buttons {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cards {
+                padding: 5px;
+                height: 320px;
+            }
+            .imgs {
+                height: 120px;
+                width: 120px;
+            }
+            button {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="cards">
-            <img class = "imgs" src="./bat.png" alt="Cricket Bat">
+            <img class="imgs" src="./bat.png" alt="Cricket Bat">
             <h2><u>Cricket Bat</u></h2>
             <p>High-quality willow cricket bat for professional players.</p>
             <h3>Price: $50</h3>
             <div class="buttons">
                 <button type="submit">Buy Now</button>
-                <button type="submit"><img class = "btn" src="./cart.png" alt="">Add to Cart</button>
+                <button type="submit"><img class="btn" src="./cart.png" alt="">Add to Cart</button>
             </div>
         </div>
         <div class="cards">
-            <img class = "imgs" src="./shoes.png" alt="Running Shoes">
+            <img class="imgs" src="./shoes.png" alt="Running Shoes">
             <h2><u>Running Shoes</u></h2>
             <p>Lightweight and comfortable running shoes for all terrains.</p>
             <h3>Price: $80</h3>
             <div class="buttons">
                 <button type="submit">Buy Now</button>
-                <button type="submit"><img class = "btn" src="./cart.png" alt="">Add to Cart</button>
+                <button type="submit"><img class="btn" src="./cart.png" alt="">Add to Cart</button>
             </div>
         </div>
         <div class="cards">
-            <img class = "imgs" src="./tracksuit.png" alt="Tracksuit">
+            <img class="imgs" src="./tracksuit.png" alt="Tracksuit">
             <h2><u>Tracksuit</u></h2>
             <p>Durable and stylish tracksuit perfect for all kind of workouts.</p>
             <h3>Price: $60</h3>
             <div class="buttons">
                 <button type="submit">Buy Now</button>
-                <button type="submit"><img class = "btn" src="./cart.png" alt="">Add to Cart</button>
+                <button type="submit"><img class="btn" src="./cart.png" alt="">Add to Cart</button>
             </div>
         </div>
         <div class="cards">
-            <img class = "imgs" src="./ball.png" alt="Soccer Ball">
+            <img class="imgs" src="./ball.png" alt="Soccer Ball">
             <h2><u>Cricket Ball</u></h2>
             <p>Premium quality Cricket ball for all kinds of professional games.</p>
             <h3>Price: $40</h3>
             <div class="buttons">
                 <button type="submit">Buy Now</button>
-                <button type="submit"><img class = "btn" src="./cart.png" alt="">Add to Cart</button>
+                <button type="submit"><img class="btn" src="./cart.png" alt="">Add to Cart</button>
             </div>
         </div>
     </div>
